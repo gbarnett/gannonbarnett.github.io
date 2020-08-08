@@ -4,9 +4,10 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Gannon Barnett'
 SITENAME = 'Gannon Barnett'
-SITEURL = ''
-
+SITEURL = 'http://localhost:8000'
+SITELOGO = SITEURL + "/images/propic_2.jpg"
 PATH = 'content'
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'America/New_York'
 
@@ -20,14 +21,10 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('My Articles', SITEURL),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (('linkedin', 'https://www.linkedin.com/in/gannon-barnett/'),)
 
 DEFAULT_PAGINATION = False
 
