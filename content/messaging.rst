@@ -27,7 +27,7 @@ Storing a public user profile is fairly straightforward; all attributes of the p
 
 
 
-Now let’s add user profile pictures. I integrated Firebase Storage for a large-file storage service. When linked objects from a storage service, it's important to store the file path, and not a URL. This is important for two reasons; first, the access tokens may change and the URL may expire; second, this abstraction allows for easy integration of requesting different sizes of the same image to allow for application scalability and flexibility. With some iPhone images being almost 3mb and 4k pixels, resizing images can save a substantial amount of download time and storage costs.
+Now let’s add user profile pictures. I integrated Firebase Storage for a large-file storage service. When linking objects from a storage service, it's important to store the file path, and not a URL. This is important for two reasons; first, the access tokens may change and the URL may expire; second, this abstraction allows for easy integration of requesting different sizes of the same image to allow for application scalability and flexibility. With some iPhone images being almost 3mb and 4k pixels, resizing images can save a substantial amount of download time and storage costs.
 
 
 

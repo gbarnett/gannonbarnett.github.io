@@ -4,10 +4,10 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Gannon Barnett'
 SITENAME = 'Gannon Barnett'
-SITEURL = 'http://localhost:8000'
+SITEURL = 'https://gbarnett.github.io/'
 SITELOGO = SITEURL + "/images/propic_2.jpg"
 PATH = 'content'
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'pdfs']
 
 TIMEZONE = 'America/New_York'
 
@@ -21,7 +21,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('My Articles', SITEURL),)
+LINKS = (('My Articles', SITEURL), ('resume', SITEURL + '/resume.pdf'))
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/gannon-barnett/'),)
