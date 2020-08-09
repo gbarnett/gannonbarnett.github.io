@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Gannon Barnett'
 SITENAME = 'Gannon Barnett'
-SITEURL = 'https://gbarnett.github.io/'
+SITEURL = 'localhost:8000'
 SITELOGO = SITEURL + "/images/propic_2.jpg"
 PATH = 'content'
 STATIC_PATHS = ['images', 'pdfs']
