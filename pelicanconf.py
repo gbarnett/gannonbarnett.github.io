@@ -32,7 +32,7 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('My Articles', SITEURL), ('resume', SITEURL + '/resume.pdf'))
+LINKS = (('My Articles', SITEURL), ('resume', SITEURL + '/pdfs/GannonBarnett-8_17_2020.pdf'))
 
 # Social widget
 SOCIAL = (('linkedin', 'https://www.linkedin.com/in/gannon-barnett/'),)
