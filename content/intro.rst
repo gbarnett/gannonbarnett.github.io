@@ -1,8 +1,9 @@
-I'm Starting a Technical Blog
-#############################
+I'm Starting a Blog
+############################
 
-:date: 2020-07-25 10:00
-:slug: starting-blog
+:date: 2020-08-01 10:00
+:category: systems
+:slug: intro-blog
 :authors: Gannon Barnett
 
 Welcome to my blog!
