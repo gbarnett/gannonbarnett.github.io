@@ -16,7 +16,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 #DISQUS_SITENAME = ""
 GOOGLE_ANALYTICS = "UA-118783637-2"
-SITELOGO = SITEURL + "/images/pro_pic_aug2020.jpg"
+SITELOGO = SITEURL + "/images/pro_pic_aug2020.png"
 PATH = 'content'
 STATIC_PATHS = ['images', 'pdfs']
 
