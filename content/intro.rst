@@ -1,8 +1,8 @@
 I'm Starting a Blog
 ############################
 
-:date: 2020-08-01 10:00
-:category: systems
+:date: 2020-07-25 10:00
+:category: misc
 :slug: intro-blog
 :authors: Gannon Barnett
 
@@ -20,4 +20,6 @@ as well as my experience in the technical and business sides of mobile app devel
 
 
 Coffee til beer,
+
+
 Gannon
