@@ -4,7 +4,18 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Gannon Barnett'
 SITENAME = 'Gannon Barnett'
-# SITEURL = 'localhost:8000'
+SITEURL = 'https://gbarnett.github.io'
+RELATIVE_URLS = False
+
+FEED_ALL_ATOM = 'feeds/all.atom.xml'
+CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
+
+DELETE_OUTPUT_DIRECTORY = True
+
+# Following items are often useful when publishing
+
+#DISQUS_SITENAME = ""
+GOOGLE_ANALYTICS = "UA-118783637-2"
 SITELOGO = SITEURL + "/images/pro_pic_aug2020.jpg"
 PATH = 'content'
 STATIC_PATHS = ['images', 'pdfs']
