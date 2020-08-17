@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Gannon Barnett'
 SITENAME = 'Gannon Barnett'
 # SITEURL = 'localhost:8000'
-SITELOGO = SITEURL + "/images/propic_2.jpg"
+SITELOGO = SITEURL + "/images/pro_pic_aug2020.jpg"
 PATH = 'content'
 STATIC_PATHS = ['images', 'pdfs']
 
@@ -33,6 +33,6 @@ DEFAULT_PAGINATION = False
 # Theme
 THEME = "Flex"
 
-# Plugins 
-PLUGIN_PATHS = ['pelican-plugins'] 
+# Plugins
+PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = []
