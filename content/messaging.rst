@@ -6,11 +6,12 @@ My NoSQL User Profile Design
 :slug: nosql-user-profile
 :authors: Gannon Barnett
 
-In this article I'll review a database design I created for handling user profiles while prioritizing security and scalability.
+In this article I'll review a database design I created for handling user profiles while
+prioritizing security and scalability.
 Below are the main features I'll review:
 
 - public profile (name, bio, photo …)
-- private/secure data (credit card number, home address … )
+- private/secure data (sensitive financial or personal data)
 
 
 I picked these features because in my original design I found some subtle optimizations
@@ -41,12 +42,22 @@ Now let’s add user profile pictures. I integrated Firebase Storage for a large
    :align: center
 
 
-With this design, we can resize images by adding a suffix to the original photo id indicating the file’s scale, and then dynamically generate a filepath. I could then request the URL for a given filepath and serve it. To implement this I added a listener to the photos path of my storage bucket which would resize images when they were added.
+With this design, we can resize images by adding a suffix to the original photo id
+indicating the file’s scale, and then dynamically generate a filepath.
+I could then request the URL for a given filepath and serve it. To implement this
+I added a listener to the photos path of my storage bucket which would resize images
+when they were added.
 
 Secure User Information
 -----------------------
-Next, let’s allow for adding secure data. In a NoSQL database, data is loaded each document at a time so you can't restrict access on specific key/value pairs of a document. Regardless of what your application keeps from the document the entire document is transferred over the network, allowing malicious hackers to potentially steal some supposedly private information! To prevent sending secure information to an untrusted client, we can move all actions with secure information to server-side, and add an API interface for the client. To allow for public access of the user profile and restricted access of secure information, we can seperate the secure information into a nested collection. I implemented the follow design (note that this design has the implicit assumption that the base user document is public, and only explicitly specifies the documents in the secure collection as secure).
+Next, let’s allow for adding secure data. In a NoSQL database, data is loaded each document
+at a time so you can't restrict access on specific key/value pairs of a document. Regardless
+of what your application retains from document, the entire document is transferred over the network
+and cached in the browser, allowing a malicious party to access secure information!
 
+
+We want different security rules for different parts of the database. To achieve
+this we can put different classes of data in different collections.
 
 .. image:: {filename}images/messaging_3.png
    :width: 896
@@ -54,8 +65,9 @@ Next, let’s allow for adding secure data. In a NoSQL database, data is loaded 
    :align: center
 
 
-
-We can then configure our database security rules so our public user profile is accessible and our secure user information is not.
+Now that public and private information are separated, we can selectively expose
+only the public information. The private information can still be utilized in the server
+context, but it will never be insecurely transferred to the client. Wahoo!
 
 .. image:: {filename}images/messaging_4.png
    :width: 580
@@ -63,8 +75,7 @@ We can then configure our database security rules so our public user profile is 
    :align: center
 
 
-These rules enforce the following security restrictions:
-only the user may edit their own information
-
+These rules allow secure information to only exist in trusted services. Effectively,
+these rules state:
 - the user’s document is public
-- the user’s ‘secure’ subcollection is never allowed to be read, written, or updated (default behavior is no access, rules only act on the specific path)
+- the user’s ‘secure’ subcollection is never allowed to be read, written, or updated, but data can be accessed by server functions
