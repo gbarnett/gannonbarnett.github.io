@@ -6,6 +6,9 @@ Other Cool Articles
 
 I want to use this space to link things I thought were cool. 
 
+**September 2020 Finds**
+`Google's 'graveyard' - list of failed google arms <https://killedbygoogle.com/>`_
+
 **August 2020 Finds**
 
 `Original Bitcoin article <https://bitcoin.org/bitcoin.pdf>`_
