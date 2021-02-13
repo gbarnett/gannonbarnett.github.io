@@ -15,3 +15,4 @@ To serve the html locally, run:
 `pelican --autoreload --listen` 
 Which will automatically listen to changes and update to http://localhost:8000. 
 
+test
