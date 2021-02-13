@@ -14,6 +14,11 @@ jobs:
     - name: Checkout src
       uses: actions/checkout@v2
       
+    - name: Add permissions
+      run: chmod +x ./publish.sh
+      shell: bash
+      
     - name: Compile src and publish to gh-pages
       run: ./publish.sh
+      shell: bash
       
