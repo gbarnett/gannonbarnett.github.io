@@ -13,14 +13,11 @@ jobs:
     steps:
     - name: Checkout src
       uses: actions/checkout@v2
-      
-    - name: Add permissions
-      run: chmod +x ./publish.sh
-      shell: bash
-      
+      with: 
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+
     - name: Compile src and publish to gh-pages
       run: ./publish.sh
       shell: bash
-      with: 
-        github_token: ${{ secrets.GITHUB_TOKEN }}
+      
       
