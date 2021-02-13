@@ -21,4 +21,6 @@ jobs:
     - name: Compile src and publish to gh-pages
       run: ./publish.sh
       shell: bash
+      with: 
+        github_token: ${{ secrets.GITHUB_TOKEN }}
       
