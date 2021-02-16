@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://gbarnett.github.io/theme/stylesheet/style.min.css">
+
+
+    <link id="pygments-light-theme" rel="stylesheet" type="text/css"
+          href="https://gbarnett.github.io/theme/pygments/github.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="https://gbarnett.github.io/theme/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="https://gbarnett.github.io/theme/font-awesome/css/brands.css">
+  <link rel="stylesheet" type="text/css" href="https://gbarnett.github.io/theme/font-awesome/css/solid.css">
+
+
+    <link href="https://gbarnett.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Gannon Barnett Atom">
+
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-118783637-2', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
+
+<meta name="author" content="Gannon Barnett" />
+<meta name="description" content="The first app I built, SitReady, was a rowing timing application. Some background on rowing and the problem- rowing races can range from 2k-6k meters in length depending on the season and course. To time rowing races, there are two timing stations- one at the start and finish. Boats are …" />
+<meta name="keywords" content="">
+
+
+<meta property="og:site_name" content="Gannon Barnett"/>
+<meta property="og:title" content="SitReady, My First App"/>
+<meta property="og:description" content="The first app I built, SitReady, was a rowing timing application. Some background on rowing and the problem- rowing races can range from 2k-6k meters in length depending on the season and course. To time rowing races, there are two timing stations- one at the start and finish. Boats are …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://gbarnett.github.io/first-app.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2020-08-06 10:00:00-04:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://gbarnett.github.io/author/gannon-barnett.html">
+<meta property="article:section" content="mobile"/>
+<meta property="og:image" content="/images/pro_pic_aug2020.png">
+
+  <title>Gannon Barnett &ndash; SitReady, My First App</title>
+
+</head>
+<body class="light-theme">
+  <aside>
+    <div>
+      <a href="https://gbarnett.github.io">
+        <img src="/images/pro_pic_aug2020.png" alt="" title="">
+      </a>
+
+      <h1>
+        <a href="https://gbarnett.github.io"></a>
+      </h1>
+
+
+
+      <nav>
+        <ul class="list">
+
+
+              <li>
+                <a target="_self"
+                   href="https://gbarnett.github.io/pages/about.html#about">
+                  about me
+                </a>
+              </li>
+              <li>
+                <a target="_self"
+                   href="https://gbarnett.github.io/pages/cool-articles.html#cool-articles">
+                  interesting things
+                </a>
+              </li>
+
+            <li>
+              <a target="_self" href="/pdfs/GannonBarnett-8_17_2020.pdf" >resume</a>
+            </li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+          <li>
+            <a  class="sc-linkedin" href="https://www.linkedin.com/in/gannon-barnett/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+      </ul>
+    </div>
+
+  </aside>
+  <main>
+
+
+<article class="single">
+  <header>
+      
+    <h1 id="first-app">SitReady, My First App</h1>
+    <p>
+      Posted on Thu 06 August 2020 in <a href="https://gbarnett.github.io/category/mobile.html">mobile</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>The first app I built, SitReady, was a rowing timing application. Some background on rowing and the problem- rowing races can range from 2k-6k meters in length depending on the season and course. To time rowing races, there are two timing stations- one at the start and finish. Boats are marked with bow numbers to serve as an identifier, and each boat’s total time is the difference between the time marked for it at the two stations. At a regatta an expensive timing company will be hired to keep track of this process; commonly the company HereNow. During practice this method requires a coach to serve as a timing station, and times are calculated at the end by manually comparing marked times. This manual process can be time consuming, and rowers must wait for the coach from the start to meet the coach from the finish to compare times, which can often take several minutes (too long for  an excited crew). That is the crux of the problem SitReady is solving: live results from crew races can’t be achieved in day-to-day operations.</p>
+<p>I coded SitReady in Swift for iOS and used GCP/Firebase for backend services. I was really excited about it and was able to get a version published in about a month. Once published, I showed it to my high school coaches, who used it a few times. After I fixed a few bugs, I looked into how to get SitReady out to more coaches. It was winter at the time, teams were off the water and there were no upcoming regattas. I looked to erg competitions that would have the same audience, and landed on buying an advertising square on  C.R.A.S.H.-B.’s site for $300/year. I never really was able to convince coaches to use the platform, and ran out of steam developing it to really implement the last few features coaches wanted.</p>
+<p>SitReady was my first dive into the business of app development and it was a blast. I was able to distribute a product and iterate on it based on user feedback. In hindsight, I would’ve spent more time making sure the product worked and was always trustworthy, because I learned my target audience really cared about accuracy. Also I wouldn’t have spent the money on advertising online and would’ve instead cold-called coaches to introduce them to the product. In the end I think it didn’t expand much because 1) the product has defects (looks unprofessional, occasional bug) and 2) I didn’t have the means to reach the target audience. Regardless I still think that the idea has potential to break into the rowing world, and to this day I still get the occasional email from a coach asking about certain features. Definitely on my todo list if I have time to improve and release this app for both iOS and Android.</p>
+<p>More on my other two published apps, Rough Riderz and The Watt Farm App, to come soon!</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+<p>&copy;  </p>
+<p>
+Built with <a href="http://getpelican.com" target="_blank">Pelican</a> using <a href="http://bit.ly/flex-pelican" target="_blank">Flex</a> theme
+</p>    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Gannon Barnett ",
+  "url" : "https://gbarnett.github.io",
+  "image": "/images/pro_pic_aug2020.png",
+  "description": ""
+}
+</script>
+
+
+</body>
+</html>
