@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 
 AUTHOR = 'Gannon Barnett'
 SITENAME = 'Gannon Barnett'
-SITEURL = 'https://gbarnett.github.io'
+SITEURL = ''
 RELATIVE_URLS = False
 
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
@@ -42,7 +42,7 @@ DEFAULT_PAGINATION = False
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 # Theme
-THEME = "Flex"
+THEME = "flex-theme"
 
 # Plugins
 PLUGIN_PATHS = ['pelican-plugins']
