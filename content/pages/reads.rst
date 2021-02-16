@@ -1,18 +1,17 @@
-Other Cool Articles
+interesting things
 ############################
 :date: 2020-08-08 10:00
 :slug: cool-articles
 :authors: Gannon Barnett
+:status: published
 
-I want to use this space to link things I thought were cool. 
+`The Night Watch <https://www.usenix.org/system/files/1311_05-08_mickens.pdf>`_
 
-`The Night Watch by James Mickens <https://www.usenix.org/system/files/1311_05-08_mickens.pdf>`_
-
-`Great explanation of Chess AI' <https://www.youtube.com/watch?v=U4ogK0MIzqk&ab_channel=SebastianLague>`_
+`Great explanation of Chess AI <https://www.youtube.com/watch?v=U4ogK0MIzqk&ab_channel=SebastianLague>`_
 
 `Google's 'graveyard' - list of failed google arms <https://killedbygoogle.com/>`_
 
-`Original Bitcoin article <https://bitcoin.org/bitcoin.pdf>`_
+`Original Bitcoin paper <https://bitcoin.org/bitcoin.pdf>`_
 
 `Clean Architecture Diagram <https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html>`_
 

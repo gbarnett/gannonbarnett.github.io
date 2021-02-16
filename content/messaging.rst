@@ -5,6 +5,7 @@ My NoSQL User Profile Design
 :category: systems
 :slug: nosql-user-profile
 :authors: Gannon Barnett
+:status: published
 
 In this article I'll review a database design I created for handling user profiles while
 prioritizing security and scalability.

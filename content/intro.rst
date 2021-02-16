@@ -1,12 +1,10 @@
-I'm Starting a Blog
+Welcome!
 ############################
 
 :date: 2020-07-25 10:00
 :category: misc
 :slug: intro-blog
 :authors: Gannon Barnett
-
-Welcome to my blog!
 
 I'm an MIT Zoom 2022 majoring in computer science with a minor
 in management and a concentration in Mandarin Chinese. For more information about me,

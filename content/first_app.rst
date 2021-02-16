@@ -5,6 +5,7 @@ SitReady, My First App
 :category: mobile
 :slug: first-app
 :authors: Gannon Barnett
+:status: published
 
 The first app I built, SitReady, was a rowing timing application. Some background on rowing and the problem- rowing races can range from 2k-6k meters in length depending on the season and course. To time rowing races, there are two timing stations- one at the start and finish. Boats are marked with bow numbers to serve as an identifier, and each boat’s total time is the difference between the time marked for it at the two stations. At a regatta an expensive timing company will be hired to keep track of this process; commonly the company HereNow. During practice this method requires a coach to serve as a timing station, and times are calculated at the end by manually comparing marked times. This manual process can be time consuming, and rowers must wait for the coach from the start to meet the coach from the finish to compare times, which can often take several minutes (too long for  an excited crew). That is the crux of the problem SitReady is solving: live results from crew races can’t be achieved in day-to-day operations. 
 

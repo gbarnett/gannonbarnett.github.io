@@ -1,11 +1,10 @@
-About Me
+about me
 ############################
 :date: 2020-06-08 10:00
 :slug: about
 :authors: Gannon Barnett
+:status: published
 
-Gannon Barnett
---------------
 I'm currently a student of MIT 2022 majoring in computer science, concentrating in Mandarin Chinese, and exploring a minor in management. I love to code and design. I also enjoy outdoor sports like soccer, running, tennis, and golf. I grew up in Newton MA and Sunapee NH. I was a dedicated lightweight rower for 6 years and medaled twice at US nationals and once at Head of the Charles. My life-long goal is to be a software entreprenuer and make a meaningful and productive product.
 
 I found my passion for coding in my senior year of highschool. I was lucky enough to get into college my senior Fall, and I was already taking a light course load due to being a year ahead in math and physics. These combined left me with a lot of time outside of school and crew, which I largely dedicated to getting into mobile app development.
