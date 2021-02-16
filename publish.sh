@@ -4,4 +4,4 @@ git push
 make clean
 make publish
 ghp-import output -b gh-pages
-git push origin gh-pages
+git push -f origin gh-pages
