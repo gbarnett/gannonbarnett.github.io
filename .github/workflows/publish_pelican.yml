@@ -13,8 +13,8 @@ jobs:
     steps:
     - name: Initialize bot 
       run: |
-        github config --global user.name "CI Bot"
-        github config --global user.email "none@email.com"
+        git config --global user.name "CI Bot"
+        git config --global user.email "none@email.com"
     - name: Checkout src
       uses: actions/checkout@v2
       with: 
